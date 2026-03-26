@@ -15,9 +15,15 @@ export default function CardGamesComponent({ title, thumb, normalPrice, salePric
           <span className="text-sm text-gray-500 line-through mr-2">${normalPrice}</span>
           <span className="text-xl font-bold text-green-600">${salePrice}</span>
         </div>
+        <div className="flex gap-3">
         <button className="rounded-lg bg-cyan-700 px-4 py-2 text-sm text-white hover:bg-cyan-800">
           Buy
         </button>
+        <button className="rounded-lg bg-cyan-700 px-4 py-2 text-sm text-white hover:bg-cyan-800">
+          Add to Cart
+        </button>
+        </div>
+
       </div>
     </Card>
   );
